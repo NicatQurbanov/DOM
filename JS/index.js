@@ -2,6 +2,18 @@ import { users } from './data.js'
 
 let container = document.querySelector('.card-container')
 
+function addCard(arr) {
+    const retrievedObject = JSON.parse(localStorage.getItem('object'))
+    let object = {
+            url: `${retrievedObject.url}`,
+            name: `${retrievedObject.name}`,
+            surname: `${retrievedObject.surname}`,
+            activity: `${retrievedObject.activity}`,
+            "birth-year": `${retrievedObject['birth-year']}`,
+        }
+        arr.push(object);
+}
+
 function render(arr) {
 for (let i = 0; i < arr.length; i++) {
     let li = document.createElement('li');
@@ -22,7 +34,7 @@ for (let i = 0; i < arr.length; i++) {
         </li>
         <li class="card-info-container">
         <p>Activity:</p>
-        <p class="activity">${arr[i].activity.join(', ')}</p>
+        <p class="activity">${arr[i].activity}</p>
         </li>
         <li class="card-info-container">
         <p>Birth Year:</p>
@@ -35,4 +47,5 @@ for (let i = 0; i < arr.length; i++) {
         document.getElementsByClassName('card')[i].remove()
     }})}}
 
+addCard(users)
 render(users)

@@ -62,11 +62,4 @@ export let users = [
         activity: ['Painter', 'Sculptor'],
         "birth-year": 1881,
     },
-    {
-        url: './Images/picasso.jfif',
-        name: "Pablo",
-        surname: "Picasso",
-        activity: ['Painter', 'Sculptor'],
-        "birth-year": 1881,
-    }
 ]

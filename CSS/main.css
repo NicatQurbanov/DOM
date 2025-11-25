@@ -7,14 +7,14 @@ body {
  background-color: aliceblue;
 }
 
-.navbar {
- background-color: lightgray;
-}
-
 main {
  width: 80%;
  margin: 0 auto;
  padding: 20px 0;
+}
+
+.navbar {
+ background-color: lightgray;
 }
 
 .card-container {
@@ -45,22 +45,6 @@ main {
  align-items: center;
 }
 
-.image-container {
- justify-content: center;
-}
-
-.image { 
- border-radius: 50%;
- width: 130px;
- height: 130px;
- object-fit: cover;
- object-position: top;
-}
-
-footer {
- height: 50px;
- background-color: lightgrey
-}
 
 .close-btn {
  position: absolute;
@@ -85,3 +69,22 @@ footer {
 i{
  transform: scale(2);
 }
+
+.image-container {
+ justify-content: center;
+}
+
+.image { 
+ border-radius: 50%;
+ width: 130px;
+ height: 130px;
+ object-fit: cover;
+ object-position: top;
+}
+
+footer {
+ height: 50px;
+ background-color: lightgrey
+}
+
+
