@@ -7,6 +7,10 @@ body {
  background-color: aliceblue;
 }
 
+.navbar {
+ background-color: lightgray;
+}
+
 main {
  width: 80%;
  margin: 0 auto;
@@ -18,6 +22,7 @@ main {
  grid-template-columns: repeat(auto-fill, 300px);
  justify-content: center;
  gap: 20px;
+ position: relative;
 }
 
 .card {
@@ -55,4 +60,28 @@ main {
 footer {
  height: 50px;
  background-color: lightgrey
+}
+
+.close-btn {
+ position: absolute;
+ right: 0;
+ background-color: lightgray;
+ border: 1px solid gray;
+ border-radius: 10px;
+ color: white;
+ width: 40px;
+ height: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+ background-color: darkslategray;
+ border: none;
+}
+
+i{
+ transform: scale(2);
 }

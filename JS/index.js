@@ -6,7 +6,9 @@ function render(arr) {
 for (let i = 0; i < arr.length; i++) {
     let li = document.createElement('li');
     li.classList.add('card');
-    li.innerHTML = `<ul>
+    li.innerHTML = `
+    <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>   
+    <ul>
         <li class="image-container card-info-container">
         <img src="${arr[i].url}" alt="" class="image">
         </li>
@@ -20,7 +22,7 @@ for (let i = 0; i < arr.length; i++) {
         </li>
         <li class="card-info-container">
         <p>Activity:</p>
-        <p class="activity">${arr[i].activity}</p>
+        <p class="activity">${arr[i].activity.join(', ')}</p>
         </li>
         <li class="card-info-container">
         <p>Birth Year:</p>
@@ -28,8 +30,9 @@ for (let i = 0; i < arr.length; i++) {
         </li>
     </ul>`
     container.appendChild(li);
-}
-}
+    document.addEventListener('click', e => {
+    if(e.target === document.getElementsByTagName('i')[i]) {
+        document.getElementsByClassName('card')[i].remove()
+    }})}}
 
 render(users)
-
