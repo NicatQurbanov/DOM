@@ -64,3 +64,12 @@ let users = [
     }
 ]
 
+for (let i = 0; i < users.length; i++) {
+document.getElementsByClassName('image')[0].setAttribute('src', './Images/picasso.jfif');
+document.getElementsByClassName('activity')[0].textContent = users[i].activity
+document.getElementsByClassName('name')[0].textContent = users[i].name
+document.getElementsByClassName('surname')[0].textContent = users[i].surname
+document.getElementsByClassName('birth-year')[0].textContent = users[i]["birth-year"]
+}
+
+

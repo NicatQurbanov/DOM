@@ -1,0 +1,47 @@
+body {
+ background-color: aliceblue;
+}
+
+main {
+ width: 80%;
+ margin: 0 auto;
+}
+
+.card-container {
+ display: grid;
+ height: 1000px;
+ grid-template-columns: repeat(3, 300px);
+ border: 1px solid black;
+ justify-content: center;
+}
+
+.card {
+ border: 1px solid red;
+ height: 500px;
+ border-radius: 10px;
+}
+
+.card > ul {
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 3fr repeat(4, 1fr);
+ height: 100%;
+}
+
+.card-info-container {
+ border-top: 1px solid green;
+ display: flex;
+ justify-content: space-between;
+ width: 90%;
+ margin: 0 auto;
+ align-items: center;
+}
+
+.image-container {
+ justify-content: center;
+}
+
+.image { 
+ border-radius: 50%;
+ width: 50%;
+}
