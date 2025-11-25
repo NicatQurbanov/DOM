@@ -46,5 +46,5 @@ for (let i = 0; i < arr.length; i++) {
     if(e.target === document.getElementsByTagName('i')[i]) {
         document.getElementsByClassName('card')[i].remove()
     }})}}
-
+addCard(users)
 render(users)
