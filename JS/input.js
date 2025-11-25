@@ -13,9 +13,8 @@ inputImg.addEventListener('change', function() {
 })
 
 btn.addEventListener('click', () => {
-    let image = localStorage.getItem('img');
     let object = {
-        url: `${image}`,
+        url: '',
         name: `${arr[1].value}`,
         surname: `${arr[2].value}`,
         activity: `${arr[3].value}`,

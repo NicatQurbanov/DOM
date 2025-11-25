@@ -5,7 +5,7 @@ let container = document.querySelector('.card-container')
 function addCard(arr) {
     const retrievedObject = JSON.parse(localStorage.getItem('object'))
     let object = {
-            url: `${retrievedObject.url}`,
+            url: `${localStorage.getItem('img')}`,
             name: `${retrievedObject.name}`,
             surname: `${retrievedObject.surname}`,
             activity: `${retrievedObject.activity}`,
@@ -47,5 +47,4 @@ for (let i = 0; i < arr.length; i++) {
         document.getElementsByClassName('card')[i].remove()
     }})}}
 
-addCard(users)
 render(users)
