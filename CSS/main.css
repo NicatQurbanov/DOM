@@ -1,3 +1,8 @@
+* {
+ font-family: "Questrial",
+  sans-serif;
+}
+
 body {
  background-color: aliceblue;
 }
@@ -5,18 +10,17 @@ body {
 main {
  width: 80%;
  margin: 0 auto;
+ padding: 20px 0;
 }
 
 .card-container {
  display: grid;
- height: 1000px;
- grid-template-columns: repeat(3, 300px);
- border: 1px solid black;
+ grid-template-columns: repeat(auto-fill, 300px);
  justify-content: center;
+ gap: 20px;
 }
 
 .card {
- border: 1px solid red;
  height: 500px;
  border-radius: 10px;
 }
@@ -29,7 +33,6 @@ main {
 }
 
 .card-info-container {
- border-top: 1px solid green;
  display: flex;
  justify-content: space-between;
  width: 90%;
@@ -43,5 +46,13 @@ main {
 
 .image { 
  border-radius: 50%;
- width: 50%;
+ width: 130px;
+ height: 130px;
+ object-fit: cover;
+ object-position: top;
+}
+
+footer {
+ height: 50px;
+ background-color: lightgrey
 }
