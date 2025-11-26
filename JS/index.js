@@ -4,7 +4,8 @@ let container = document.querySelector('.card-container')
 
 function addCard(arr) {
     const retrievedObject = JSON.parse(localStorage.getItem('object'))
-    let object = {
+    if (retrievedObject) {
+           let object = {
             url: `${localStorage.getItem('img')}`,
             name: `${retrievedObject.name}`,
             surname: `${retrievedObject.surname}`,
@@ -12,6 +13,8 @@ function addCard(arr) {
             "birth-year": `${retrievedObject['birth-year']}`,
         }
         arr.push(object);
+    } else return;
+ 
 }
 
 function render(arr) {
